@@ -322,6 +322,7 @@
 
       thisCart.getElements(element);
       thisCart.initActions();
+      // thisCart.add only for check github
 
       console.log('new Cart', thisCart);
     }
