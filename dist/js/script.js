@@ -6,11 +6,7 @@
   const select = {
     templateOf: {
       menuProduct: '#template-menu-product',
-<<<<<<< HEAD
       cartProduct: '#template-cart-product', // CODE ADDED
-=======
-      cartProduct: '#template-cart-product',
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
     },
     containerOf: {
       menu: '#product-list',
@@ -31,20 +27,12 @@
     },
     widgets: {
       amount: {
-<<<<<<< HEAD
         input: 'input.amount', // CODE CHANGED
-=======
-        input: 'input.amount',
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
         linkDecrease: 'a[href="#less"]',
         linkIncrease: 'a[href="#more"]',
       },
     },
-<<<<<<< HEAD
     // CODE ADDED START
-=======
-
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
     cart: {
       productList: '.cart__order-summary',
       toggleTrigger: '.cart__summary',
@@ -63,10 +51,7 @@
       edit: '[href="#edit"]',
       remove: '[href="#remove"]',
     },
-<<<<<<< HEAD
     // CODE ADDED END
-=======
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
   };
   
   const classNames = {
@@ -74,24 +59,17 @@
       wrapperActive: 'active',
       imageVisible: 'active',
     },
-<<<<<<< HEAD
     // CODE ADDED START
     cart: {
       wrapperActive: 'active',
     },
     // CODE ADDED END
-=======
-    cart: {
-      wrapperActive: 'active',
-    },
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
   };
   
   const settings = {
     amountWidget: {
       defaultValue: 1,
       defaultMin: 1,
-<<<<<<< HEAD
       defaultMax: 9,
     }, // CODE CHANGED
     // CODE ADDED START
@@ -99,24 +77,13 @@
       defaultDeliveryFee: 20,
     },
     // CODE ADDED END
-=======
-      defaultMax: 10,
-    },
-    cart: {
-      defaultDeliveryFee: 20,
-    },
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
   };
   
   const templates = {
     menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
-<<<<<<< HEAD
     // CODE ADDED START
     cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
     // CODE ADDED END
-=======
-    cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
   };
  
   class Product {
@@ -355,6 +322,8 @@
 
       thisCart.getElements(element);
       thisCart.initActions();
+      // thisCart.add only for check github
+      // Add Again for only for learn purpose
 
       console.log('new Cart', thisCart);
     }
@@ -396,17 +365,7 @@
       console.log('testProduct:', testProducts);
 
     },
-<<<<<<< HEAD
     
-=======
-    initCart: function() {
-      const thisApp = this;
-
-      const cartElem = document.querySelector(select.containerOf.cart);
-      thisApp.cart = new Cart(cartElem);
-    },
-
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
     initData: function() {
       const thisApp = this;
 
@@ -414,12 +373,6 @@
 
     },
     
-<<<<<<< HEAD
-=======
-
-   
-
->>>>>>> cf8f130965db8a7f6c8f47de7ad4e753f460b2d6
     init: function(){
       const thisApp = this;
       console.log('*** App starting ***');
