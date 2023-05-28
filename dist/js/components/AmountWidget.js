@@ -1,7 +1,7 @@
 import {
   settings,
   select
-} from './settings';
+} from '../settings.js';
 
 
 class AmountWidget {

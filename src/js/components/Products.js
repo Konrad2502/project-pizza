@@ -3,9 +3,9 @@ import {
     select,
     classNames,
     templates
-} from './settings.js';
-import {utils} from './utils.js';
-import AmountWidget from './components/AmountWidget.js';
+} from '../settings.js';
+import {utils} from '../utils.js';
+import AmountWidget from './AmountWidget.js';
 
 
 class Product {
